@@ -24,7 +24,7 @@ public class Main {
     // Задание 3 - ИСПРАВЛЕН
     public static void printColor() {
         int value = 12222;
-        if (value <= 0) { 
+        if (value <= 0) {  // ← исправлено: <= вместо <
             System.out.println("Красный");
         } else if (value <= 100) {
             System.out.println("Желтый");
@@ -65,13 +65,13 @@ public class Main {
         }
     }
     
-    // Задание 7 - ИСПРАВЛЕНО ИМЯ
+    // Задание 7 - ИСПРАВЛЕНО
     public static boolean isPositive(int number) {
      if (number >= 0 ) {
-        return true;
+        return false;
       }
       else {
-        return false;
+        return true;
       }
     }
     
@@ -171,8 +171,8 @@ public class Main {
         }
     }
     
-    // Задание 14 - ИСПРАВЛЕНО ИМЯ
-    public static void createFilledArray(int len, int initialValue) {
+    // Задание 14 - ИСПРАВЛЕНО
+    public static int[] createFilledArray(int len, int initialValue) {
         int[] arr = new int[len];
         
         for (int i = 0; i < len; i++) {
@@ -182,7 +182,7 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
-        System.out.println();
+        return arr;
     }
     
     // ГЛАВНЫЙ МЕТОД
@@ -233,6 +233,9 @@ public class Main {
         TableDiagonal();
         System.out.println();
         
-        createFilledArray(10, 5);
+         int[] myArray = createFilledArray(10, 5);
+            for (int i = 0; i < myArray.length; i++) {
+                System.out.print(myArray[i] + " ");
+            } 
     }
 }
