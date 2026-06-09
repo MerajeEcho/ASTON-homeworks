@@ -21,10 +21,10 @@ public class Main {
         }
     }
     
-    // Задание 3 - ИСПРАВЛЕН
+    // Задание 3 
     public static void printColor() {
         int value = 12222;
-        if (value <= 0) {  // ← исправлено: <= вместо <
+        if (value <= 0) { 
             System.out.println("Красный");
         } else if (value <= 100) {
             System.out.println("Желтый");
@@ -45,7 +45,7 @@ public class Main {
         }
     }
     
-    // Задание 5 - ИСПРАВЛЕНО ИМЯ
+    // Задание 5 
     public static boolean isSumBetween10And20(int a, int b) {
         int sum = a + b;
         
@@ -56,7 +56,7 @@ public class Main {
         }
     }
     
-    // Задание 6 - ИСПРАВЛЕНО ИМЯ
+    // Задание 6 
     public static void printPositiveOrNegative(int number) {
         if (number >= 0) {
             System.out.println("Положительное");
@@ -75,14 +75,14 @@ public class Main {
       }
     }
     
-    // Задание 8 - ИСПРАВЛЕНО ИМЯ
+    // Задание 8
     public static void printStringMultipleTimes(String text, int count) {
         for (int i = 0; i < count; i++) {
             System.out.println(text);
         }
     }
     
-    // Задание 9 - ИСПРАВЛЕНО ИМЯ
+    // Задание 9 
     public static boolean isLeapYear(int year) {
         if (year % 400 == 0) {
             return true;
@@ -96,7 +96,7 @@ public class Main {
         return false;
     }
     
-    // Задание 10 - ИСПРАВЛЕНО ИМЯ
+    // Задание 10 
     public static void invertArray() {
         int[] mass = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         
@@ -121,7 +121,7 @@ public class Main {
         System.out.println();
     }
     
-    // Задание 11 - ИСПРАВЛЕНО ИМЯ
+    // Задание 11
     public static void fillArrayWithNumbers() {
         int[] numbers = new int[100];
         
@@ -132,7 +132,7 @@ public class Main {
         System.out.println();
     }
     
-    // Задание 12 - ИСПРАВЛЕНО ИМЯ
+    // Задание 12 
     public static void multiplyNumbersLessThan6() {
         int[] numbers = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         
@@ -155,7 +155,7 @@ public class Main {
         System.out.println();
     }
     
-    // Задание 13 - ИСПРАВЛЕНО ИМЯ
+    // Задание 13
     public static void TableDiagonal() {
         int[][] table = new int[3][3];
         
